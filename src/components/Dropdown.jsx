@@ -1,44 +1,43 @@
 import { Link } from "react-router-dom";
-import { Gramaticas } from "./Gramaticas";
 
 export const Dropdown = () => {
   return (
-    <div class="dropdown">
+    <div className="dropdown">
       <button
-        class="button d-flex align-items-center justify-content-between shadow text-left w-100"
+        className="button d-flex align-items-center justify-content-between shadow text-left w-100"
         type="button"
         id="dropdownMenuButton1"
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        Buscar tema...
+        Seleccionar tema...
         <i className="fas fa-search me-2" />
       </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li>
-          <Link to="/gramaticas" class="dropdown-item">
+          <Link to="/gramaticas" className="dropdown-item">
             Gramáticas
           </Link>
         </li>
         <li>
-          <a class="dropdown-item" href="#">
-            Gramáticas libres de contexto
-          </a>
+          <Link to="/gramaticas-libres" className="dropdown-item">
+            Gramáticas Libres de Contexto
+          </Link>
         </li>
         <li>
-          <a class="dropdown-item" href="#">
-            Árboles de derivación
-          </a>
+          <Link to="/arbol-derivacion" className="dropdown-item">
+            Árboles de Derivación
+          </Link>
         </li>
         <li>
-          <a class="dropdown-item" href="#">
-            Formas normales de Chomsky
-          </a>
+          <Link to="/formas-chomsky" className="dropdown-item">
+            Formas Normales de Chomsky
+          </Link>
         </li>
         <li>
-          <a class="dropdown-item" href="#">
-            Diagramas de sintaxis
-          </a>
+          <Link to="/diagrama-sintaxis" className="dropdown-item">
+            Diagramas de Sintaxis
+          </Link>
         </li>
       </ul>
     </div>
